@@ -1,0 +1,174 @@
+.navbarObj{
+    background: #0669B2;
+    position: fixed !important;
+    padding: 30px 32px;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    box-shadow: 0 8px 18px rgba(0,0,0,.033);
+    font-size:60px;
+    @media (max-width: 768px) {
+        font-size:30px;
+    }
+    .navbar-brand{
+        font-size: 60px;
+        @media (max-width: 768px) {
+            font-size:30px;
+        }
+        .navLogo{
+            color:white;
+            // font-size:30px;
+            .navBrand{
+                color:white;
+                padding:0 10px 0 10px;
+                // font-size: 30px;
+                font-weight: 500;
+                // background-color: gold;
+                                
+            }
+        }
+        i{
+            color:white;
+            cursor: pointer;
+        }
+        
+    }
+    .navbar-collapse{
+        .mr-auto{
+      
+            .navbarHome{
+                margin-right:20px;
+                
+                .fa-home{
+                    color:white;
+                }
+                .navbarHomeTitle{
+                    color:white;
+                }
+            }
+            .navbarCupon{
+                margin-right:20px;
+                
+                .navbarCuponTitle{
+                    color:white;
+                }
+            }
+            .navbarShoppingCart{
+                .shopping-cart{
+                    .cart-icon{
+                        .fa, .fas{
+                            color:white;
+                        }
+                        .navBarCartTitle{
+                            padding:0 10px 0 10px;
+                            color:white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.modal-dialog-scrollable{
+    .modal-header{
+        background-color: #0669B2;
+        color:white;
+    }
+    .modal-body{
+        img{
+            height:200px;
+            
+        }
+        @media (max-width: 768px) {
+            img{
+                height:60px;
+                
+            }
+        }
+        a{
+            font-size:70px;
+            color:#ff6699;
+        }
+        @media (max-width: 768px) {
+            a{
+                
+                font-size:30px;
+            }
+        }
+        .fa{
+            cursor: pointer;
+        }   
+
+    }
+    .modal-footer{
+        background-color: #0A3665;
+        Button{
+            height:100px;
+        }
+        @media (max-width:768px){
+            Button{
+                height:40px;
+            }   
+        }
+        
+    }
+} 
+
+
+
+
+
+.shopping-cart{
+    padding:0 10px 0 10px;
+    cursor: pointer;
+    .cart-view.active{
+        width:800px;
+        height:1200px;
+        z-index: 1000;
+        @media (max-width: 600px) {
+            width: 100%;
+            height:auto;
+        }
+        .cart-product-title{
+            padding:15px;
+            color:gray;
+       }
+       .scrollarea{
+            .cart-product-total{
+                font-size: .9rem;
+                .cart-product-qty{
+                    color:#04a2a3;
+                }
+                .cart-product-price-total{
+                    color: #28a745;
+            }
+            .cart-product-remove{
+                color:tomato;
+            }
+           
+       }
+       
+       .cart-acton-area{
+        padding: 16px;
+        height: 68px;
+        background-color: yellow;
+        button{
+          width: 100%;
+          background:red;
+          height:120px;
+          @media (max-width: 600px) {
+          button{
+            height:40px;
+          }
+           
+        }
+          &.disable{
+            opacity: 0.3;
+            cursor: not-allowed;
+          }
+        }
+      }
+    }
+}}
+

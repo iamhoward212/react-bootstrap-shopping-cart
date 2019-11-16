@@ -1,0 +1,63 @@
+// footer{
+//     font-size: 16px;
+//     background: $gray-eighty;
+//     padding: 16px;
+//     strong {
+//       color: $gray-medium;
+//     }
+//     .footer-link{
+//       margin-bottom: 20px;
+//     }
+//     a{
+//       color: $gray-dark;
+//     }
+//     .footer-massage{
+//       color: $gray-light;
+//       font-size: 12px  
+//     }
+//   }
+
+
+
+  
+
+#main_footer{
+  background-color: #0A3665;
+  color:white;
+  margin-bottom:0px;
+  @media (min-width: 1200px){
+    .container{
+      max-width:4000px;
+    }
+  }
+  .row{
+    margin-bottom:40px;
+    .footerBrand{
+      color:white;   
+      height:39px;
+      .logo{
+        margin-right:10px;
+      }
+    }
+  }
+}
+
+   
+    /* .fas.fa-user-graduate.logo{height:39px; } */
+
+   
+    // #main_footer .social_icons{
+    //      color: white;
+    //      display: inline-block;
+    // }
+    // #main_footer .social_icons .glyphicon{
+    //      font-size: 24px;
+    //      padding: 18px;
+    //      border-radius: 50%;
+    //      background-color: gray;
+    //      color: white;
+    //      margin-right: 16px;
+    // }
+    // #main_footer .social_icons_block{
+    //      margin-top: 182px;
+    // }

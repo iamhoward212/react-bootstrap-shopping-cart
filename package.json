@@ -1,0 +1,46 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "watch": "webpack -w"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.6.4",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.6",
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.9"
+  },
+  "dependencies": {
+    "@material/react-button": "^0.15.0",
+    "@material/react-card": "^0.15.0",
+    "@material/react-checkbox": "^0.15.0",
+    "@material/react-layout-grid": "^0.15.0",
+    "@material/react-material-icon": "^0.15.0",
+    "@material/react-radio": "^0.15.0",
+    "@material/react-select": "^0.15.0",
+    "@material/react-text-field": "^0.15.0",
+    "@material/react-typography": "^0.15.0",
+    "bootstrap": "^4.3.1",
+    "history": "^4.10.1",
+    "react-bootstrap": "^1.0.0-beta.14",
+    "react-bootstrap-carousel": "^4.0.1",
+    "react-responsive-carousel": "^3.1.51",
+    "react-router": "^5.1.2",
+    "react-router-config": "^5.1.1",
+    "react-router-dom": "^5.1.2",
+    "react-router-native": "^5.1.2",
+    "react-router-router": "0.0.24",
+    "react-scrollbar": "^0.5.6"
+  }
+}

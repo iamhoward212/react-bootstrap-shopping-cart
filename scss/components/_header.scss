@@ -1,0 +1,264 @@
+header {
+    background: white;
+    position: fixed;
+    padding: 30px 32px;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    box-shadow: 0 8px 18px rgba(0,0,0,.033);
+    .container{
+      padding: 0 32px;
+      display: flex;
+      display: -webkit-flex;
+      max-width: 960px;
+      margin: 0 auto;
+      @media (max-width: 768px) {
+        padding: 0 16px;
+      }
+      @media (max-width: 480px) {
+        padding: 0 0px;
+      }
+    }
+  }
+  
+  // Logo
+  .logo {
+    height: 36px;
+    @media (max-width: 480px) {
+      height: 24px;
+      margin: 6px 0;
+    }
+  }
+  .header-logo{
+    font-size:3em; 
+    color:Tomato
+  }
+  .header-title{
+    font-size:3em; 
+    color:Tomato;
+    margin:0 20px;
+  
+
+  }
+  
+  .search-area{
+    flex-grow: 2;
+    -webkit-flex-grow: 2;
+  }
+  
+  // Search Box
+  .search {
+    display: flex;
+    display: -webkit-flex;
+    padding-left: 48px;
+    padding-right: 48px;
+    @media  (max-width: 768px){
+      padding-left: 24px;
+      padding-right: 24px;
+    }
+    @media  (max-width: 480px){
+      padding-left: 18px;
+      padding-right: 18px;
+    }
+    .search-keyword{
+      height: 36px;
+      width: 100%;
+      border: 1px solid $primary-red;
+      border-radius: 2px 0 0 2px;
+    }
+    .search-button{
+      border-radius: 0 2px 2px 0;
+      background: $primary-red
+        url(https://res.cloudinary.com/sivadass/image/upload/v1494692031/icons/search.png)
+        center no-repeat;
+      width: 80px;
+      @media (max-width: 768px) {
+        display: none;
+      }
+    }
+  }
+  
+  //cart-info
+  .shopping-cart{
+    position: relative;
+    .cart-info{
+      display: inline-block;
+      max-height: 36px;
+      @media  (max-width: 768px){
+        display: none;
+      }
+      table{
+        font-size: 14px;
+        color: $primary-red;
+        max-height: 36px;
+      }
+    }
+    .cart-icon{
+      display: inline-block;
+      margin-left: 8px;
+      position: relative;
+      img{
+        max-height: 36px;
+        &:hover{
+          cursor: pointer;
+        }
+      }
+      .cart-counter{
+        display: none;
+        color: white;
+        @media  (max-width: 768px){
+          display: block;
+          position: absolute;
+          top: 14;
+          left: 14;
+        }
+      }
+    }
+    .cart-view{
+      display: none;
+      background: white;
+      border: 1px solid;
+      border-color: $gray-eighty;
+      &:before {
+        content: '';
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 8px 8px 8px;
+        border-color: transparent transparent $gray-eighty transparent;
+        position: absolute;
+        top: -9px;
+        right: 0px;
+      }
+  
+      &:after {
+        content: '';
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 8px 8px 8px;
+        border-color: transparent transparent white transparent;
+        position: absolute;
+        top: -8px;
+        right: 0px;
+      }
+      .cart-Scroll{
+        width: 360;
+        height: 320;
+        @media (max-width: 400px) {
+          width: 280;
+        }
+        @media (max-height: 400px){
+          height: 180;
+        }
+      }
+      .empty-cart{
+        width: 100%;
+        margin: 0 auto;
+        img{
+          width: 100%;
+          max-width: 280px;
+          margin: 16px auto;
+        }
+      }
+      .cart-products{
+        .cart-product{
+          display: flex;
+          display: -webkit-flex;
+          justify-content: space-around;
+          align-items: center;
+          -webkit-align-items: center;
+          .cart-product-img{
+            max-height: 60px;
+          }
+          .cart-product-total{
+            text-align: right;
+            .cart-product-qty{
+              color: $gray-light;
+            }
+          }
+          .cart-product-info{
+            color: $gray-light;
+          }
+          .cart-product-remove{
+            color: $gray-light;
+            font-size: 24px;
+            &:hover{
+              color: $primary-red;
+            }
+          }
+        }
+      }
+      .cart-acton-area{
+        padding: 16px;
+        height: 68px;
+        button{
+          width: 100%;
+          background: #157711;
+          height:120px;
+          @media (max-width: 600px) {
+            height:40px;
+            }
+          &.disable{
+            opacity: 0.3;
+            cursor: not-allowed;
+          }
+        }
+      }
+    }
+    .cart-view.active{
+      display: block;
+      position: absolute;
+      top: 48px;
+      right: 0;
+      width: 360px;
+      height: 388px;
+      box-shadow: 0 10px 20px rgba(0,0,0,.19), 0 6px 6px rgba(0,0,0,.23);
+      @media (max-width: 400px) {
+        width: 100%;
+        min-width: 280px;
+      }
+    }
+  }
+  
+  @keyframes tada {
+    from {
+      transform: scale3d(1, 1, 1);
+      opacity: 0;
+    }
+  
+    10%,
+    20% {
+      transform: scale3d(0.8, 0.66, 0.66) rotate3d(0, 0, 1, -3deg);
+    }
+  
+    30%,
+    50%,
+    70%,
+    90% {
+      transform: scale3d(1.2, 1.2, 1.2) rotate3d(0, 0, 1, 3deg);
+    }
+  
+    40%,
+    60%,
+    80% {
+      transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+    }
+  
+    to {
+      transform: scale3d(1, 1, 1);
+      opacity: 1;
+    }
+  }
+  
+  .tada {
+    animation-name: tada;
+    animation-duration: 300ms;
+    animation-fill-mode: both;
+  }
+  .jumpOut{
+    color:white;
+    &:hover{
+      cursor: pointer;
+    }
+  }

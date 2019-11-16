@@ -1,0 +1,117 @@
+// .info{
+//     @media(min-width:1200px){
+//         .container{
+//             max-width:100%;
+//         }
+//     }
+//     .container{
+//         width:100%;
+//         form{
+//             .mdc-layout-grid{
+//                 .mdc-layout-grid-inner{
+//                     .mdc-layout-grid__cell .boxRecieptType{
+//                             background-color: yellow;
+//                         } 
+//                 }
+          
+//             }   
+//         }
+//     }
+// }
+
+// .citySelector{
+//     margin-bottom:10px;
+// }
+
+// .addressPickerTitle{
+//     padding:1rem;
+// }
+// .button.input.optgroup.select.textarea{
+//     margin-bottom: 10px;
+// }
+
+// .boxAddressPicker{
+//     box-shadow:0 5px 5px -3px rgba(0,0,0,.2), 
+//     0 8px 10px 1px rgba(0,0,0,.14), 
+//     0 3px 14px 2px rgba(0,0,0,.12);
+//     border-radius: 15px;
+// }
+// .addressPickerTopic{
+//     margin-left: 20px;
+//     margin-top: 20px;
+//     margin-bottom: 0px;
+// }
+.sectionInfo{
+    .container{
+        width:100%;
+        .infoTitle{
+            font-size: 3.5rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color:#0A3665;
+        }
+        @media (max-width: 1200px){
+            .infoTitle{
+                font-size: 1.5rem;
+            }
+        }
+        form{
+            font-size: 2.8rem;
+            color:#0A3665;
+            @media (max-width:768px) {
+                font-size:1.2rem;
+            }
+            .btn-success{
+                height:80px;
+                width:100%;
+            }
+        }
+
+    }
+    @media (min-width: 1200px){
+        .container {
+            max-width: 5300px;
+        }        
+    }    
+}
+.modal-header{
+    background-color: #0669B2;
+    .modal-title{
+        color:white;
+    }
+}
+.modal-body {
+    background-color: #0669B2;
+    color:white;
+    text-align: center;
+}
+.modal-footer{
+    background-color: #0A3665;
+    // .primary .continueToBuy{
+    //     color:red;
+    // }
+    .btn-success{
+        height:80px;
+        width:100%;
+    }
+    .btn-primary{
+        height:80px;
+        width:100%;
+    }
+    @media (max-width: 769px){
+        .btn-primary{
+            width:100%;
+            margin-top:10px;
+            height:40px;
+        }
+    }
+    @media (max-width: 769px){
+        .btn-success{
+            width:100%;
+            margin-top:10px;
+            height:40px;
+
+        }
+    }
+    
+}

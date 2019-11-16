@@ -1,0 +1,11 @@
+#sectionCarousel{
+    margin-top:100px;
+    width: 100%;
+    @media (min-width: 1200px){
+        .container {
+            max-width: 3600px;
+            }
+            
+    }
+
+}

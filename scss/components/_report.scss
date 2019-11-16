@@ -1,0 +1,159 @@
+.sectionReport{
+    margin-top:0;
+    margin-bottom: 30px;
+    @media (min-width: 1200px){
+        .container{
+            max-width:4000px;
+        }
+    }
+    .container{
+        .titleReport{
+            font-size: 3.5rem;
+            color: #0A3665;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            @media (max-width:768px) {
+                font-size: 1.5rem;
+                margin-bottom: 1rem;
+            }
+        }
+
+       div{
+        table{
+            font-size: 3rem;
+            text-align: center;
+            
+            @media (max-width:768px) {
+                font-size: 1rem;
+            }
+            .checkOutTableThead{
+                background-color:#0A3665;
+                // #4d4d4d;
+                color:white;
+                .checkOutTableTheadProductPicture{
+                        width:20%;
+                }
+                .checkOutTableTheadProduct{width:20%}
+                .checkOutTableTheadPrice{width:20%}
+                .checkOutTableTheadQty{width:20%}
+                .checkOutTableTheadTotalPrice{width:20%}
+            }
+            tbody{
+                color:#0669B2;
+                tr{
+                    td{
+                        .checkoutProducImg{
+                            max-height: 150px;
+                        }
+                        @media (max-width: 768px) {
+                            .checkoutProducImg{
+                                max-height: 80px;
+                            }
+                        }
+                    }
+                    td{
+                        .cuponUsed{
+                            display: none;
+                        }
+                        .cuponUsed.cuponUsed-active{
+                            display: block;
+                            color:#fc8a52;
+                        }
+                    }
+                    td{
+                        .productPrice{
+                            // color:black;
+                        }
+                        .productPrice.productPrice-active{
+                            
+                            // color:black;
+                            text-decoration:line-through;
+                            text-decoration-color:red;
+                        }
+                        .cuponUsedPrice{
+                            display: none;
+                        }
+                        .cuponUsedPrice.cuponUsedPrice-active{
+                            display: block;
+                            color:#fc8a52!important;
+                        }
+                    }
+                }
+
+            }
+        }
+        
+        .container{
+            .row .totalPriceReport{
+                font-size: 3rem;
+                font-weight: bold;
+                color: #28A745;
+                @media (max-width:768px){
+                    font-size: 1.1rem;
+                    margin-top: 1rem;
+                }
+                .productPrice{
+                    // color:black;
+                }
+                .productPrice.productPrice-active{
+                    // color:black;
+                    text-decoration:line-through;
+                    text-decoration-color:red;
+                }
+            }
+            
+        }
+        .container{
+            .btn-success{
+                height:80px;
+                   
+            }
+            @media (max-width:768px){
+                .btn-success{
+                    height:40px;
+                }
+            }
+            
+        }
+       
+        .discountedPrice{
+            display: none;
+        }
+        .discountedPrice.discountedPrice-active{
+            display: block;
+            font-size: 3rem;
+                font-weight: bold;
+                color: #28A745;
+                @media (max-width:768px){
+                    font-size: 1.1rem;
+                    margin-top: 0.2rem;
+                }
+        }
+       
+        }
+    }
+    }
+
+
+.titlePersonalInfo{
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #0A3665;
+    margin-bottom: 1.5rem;
+}
+@media (max-width: 768px) {
+    .titlePersonalInfo{
+        font-size: 1.5rem;
+        margin-top:1.5rem;
+        margin-bottom: 1rem;;
+    }
+}
+
+.reportProductImg{
+    height: 150px;
+}
+@media (max-width: 768px) {
+    .reportProductImg{
+        height: 60px;
+    }
+}
